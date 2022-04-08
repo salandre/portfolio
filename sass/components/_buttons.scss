@@ -1,0 +1,24 @@
+
+.arrow_up {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    position:fixed; 
+    text-align: center;
+    font-size:18px;
+    height:50px; 
+    width:50px;
+    border-radius: 25px;
+    right:20px;
+    bottom: 20px;
+    cursor: pointer;
+    
+    transition: ease all 0.2s;  
+            
+    &:hover {
+        filter: drop-shadow(0 0 0.75rem white);
+    }
+
+    &:visited {
+        color:white;
+    }
+}

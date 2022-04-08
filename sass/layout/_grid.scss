@@ -1,75 +1,155 @@
 .projects {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:100px;
-    margin:50px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
+    margin:100px auto;
     //width:100%;
 
     article {
         display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items:center;
 
         width:400px;
         height:325px; 
         border-radius: 10px;
+        box-shadow: 8px 8px 8px #f8f7fd;
         cursor:pointer;  
-        transition: all ease 0.5s;
+        transition: background-image ease 0.5s;
+
+        &:hover {
+            box-shadow: 8px 8px 8px #7f7f7f;
+        }
 
         h2 {
             visibility:hidden;
             color:white;
-            background-color: rgba(64, 64, 64, 0.3);
-            border-radius: 5px;
-            text-shadow: 1px 1px 5px black;
+            //background-color: rgba(64, 64, 64, 0.3);
+            //border-radius: 5px;
+            //text-shadow: 1px 1px 5px black;
             font-family: 'Roboto', sans-serif;
             padding:5px;
         }
         
         &.projet1 {
             background-image: url(../images/projet1.png);
+            background-size: contain;
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet1.png);
+            }
         }
         
         &.projet2 {
             background-image: url(../images/projet2.png);
+            background-size: contain;
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet2.png);
+            }
         }
         
         &.projet3 {
             background-image: url(../images/projet3.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet3.png);
+            }
         }
         
         &.projet4 {
             background-image: url(../images/projet4.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet4.png);
+            }
         }
         
         &.projet5 {
             background-image: url(../images/projet5.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet5.png);
+            }
         }
         
         &.projet6 {
             background-image: url(../images/projet6.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet6.png);
+            }
         }
         
         &.projet7 {
             background-image: url(../images/projet7.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet7.png);
+            }
         }
         
         &.projet8 {
             background-image: url(../images/projet8.png);
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet8.png);
+            }
         }
                 
         &.projet9 {
             background-image: url(../images/projet9.png);
-        }
-
-
-        &:hover {
-            filter:grayscale(1);
-
-            h2 {
-                visibility:visible;
+            
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet9.png);
             }
         }
 
+        &:hover {    
+            filter:grayscale(0.85);
+
+            h2, .technos {
+                visibility:visible;                
+            }            
+        }
+
+        .technos {
+            position:relative;
+            width:100%;
+            bottom:-80px;
+            visibility:hidden;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding:0 20px;;
+
+                li 
+                { 
+                    color:white;
+                    list-style: none;
+
+                    i{
+                        font-size: 2rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 1650px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
     }
 }
