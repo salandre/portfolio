@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:30px;
     margin:100px auto;
-    //width:100%;
 
     article {
         display:flex;
@@ -14,7 +13,7 @@
         width:400px;
         height:325px; 
         border-radius: 10px;
-        box-shadow: 8px 8px 8px #f8f7fd;
+        //box-shadow: 8px 8px 8px #f8f7fd;
         cursor:pointer;  
         transition: background-image ease 0.5s;
 
@@ -25,9 +24,6 @@
         h2 {
             visibility:hidden;
             color:white;
-            //background-color: rgba(64, 64, 64, 0.3);
-            //border-radius: 5px;
-            //text-shadow: 1px 1px 5px black;
             font-family: 'Roboto', sans-serif;
             padding:5px;
         }
@@ -122,8 +118,18 @@
 
             ul {
                 display: flex;
-                justify-content: space-between;
+                align-items: center;
                 padding:0 20px;;
+
+                &.between {
+                    justify-content: space-between;                   
+                }
+
+                &.around {
+                    justify-content: space-around;                   
+                }
+
+
 
                 li 
                 { 
@@ -132,14 +138,16 @@
 
                     i{
                         font-size: 2rem;
+
+                        &.taller {
+                            font-size: 3rem;
+                        }
                     }
                     
                 }
             }
         }
     }
-
-
 
     @media screen and (max-width: 1650px) {
         grid-template-columns: 1fr 1fr 1fr;
