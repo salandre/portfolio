@@ -6,12 +6,12 @@ body {
     display:flex;
     justify-content: center;
     font-family: "Roboto", Arial, sans-serif;
-    //background-color: #fed;
+    background-color: $color-body;
 }
 
 .resume {
     display:none;
-    background-color: #000000de;
+    background-color: #14213dfb;
     border-radius: 10px;
     position: fixed;
     top: 10px;
@@ -20,13 +20,13 @@ body {
     right: 10px;
     z-index:10;
     box-sizing: border-box;
-    color:white;
+    color:$color-body;
     flex-direction: column;
     overflow: hidden;
 
     .container {
         padding: 50px 50px;
         overflow-y: auto;
-        text-align: center;
+        //text-align: center;
     }
 }

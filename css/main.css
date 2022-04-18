@@ -382,71 +382,72 @@ template {
 }
 .projects article h2 {
   visibility: hidden;
-  color: white;
+  color: #e5e5e5;
   font-family: "Roboto", sans-serif;
   padding: 5px;
 }
 .projects article.projet1 {
   background-image: url(../images/projet1.png);
-  background-size: contain;
+  background-color: #fca311;
 }
 .projects article.projet1:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet1.png);
 }
 .projects article.projet2 {
   background-image: url(../images/projet2.png);
-  background-size: contain;
+  background-color: #fca311;
 }
 .projects article.projet2:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet2.png);
 }
 .projects article.projet3 {
   background-image: url(../images/projet3.png);
+  background-color: #fca311;
 }
 .projects article.projet3:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet3.png);
 }
 .projects article.projet4 {
   background-image: url(../images/projet4.png);
+  background-color: #fca311;
 }
 .projects article.projet4:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet4.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet4.png);
 }
 .projects article.projet5 {
   background-image: url(../images/projet5.png);
+  background-color: #fca311;
 }
 .projects article.projet5:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet5.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet5.png);
 }
 .projects article.projet6 {
   background-image: url(../images/projet6.png);
+  background-color: #fca311;
 }
 .projects article.projet6:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet6.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet6.png);
 }
 .projects article.projet7 {
   background-image: url(../images/projet7.png);
+  background-color: #fca311;
 }
 .projects article.projet7:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet7.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet7.png);
 }
 .projects article.projet8 {
   background-image: url(../images/projet8.png);
+  background-color: #fca311;
 }
 .projects article.projet8:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet8.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet8.png);
 }
 .projects article.projet9 {
   background-image: url(../images/projet9.png);
+  background-color: #fca311;
 }
 .projects article.projet9:hover {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../images/projet9.png);
-}
-.projects article:hover {
-  filter: grayscale(0.85);
-}
-.projects article:hover h2, .projects article:hover .technos {
-  visibility: visible;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet9.png);
 }
 .projects article .technos {
   position: relative;
@@ -457,7 +458,10 @@ template {
 .projects article .technos ul {
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 5px 20px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  border-radius: 10px;
 }
 .projects article .technos ul.between {
   justify-content: space-between;
@@ -466,14 +470,13 @@ template {
   justify-content: space-around;
 }
 .projects article .technos ul li {
-  color: white;
   list-style: none;
 }
-.projects article .technos ul li i {
-  font-size: 2rem;
+.projects article .technos ul li img {
+  width: 50px;
 }
-.projects article .technos ul li i.taller {
-  font-size: 3rem;
+.projects article:hover h2, .projects article:hover .technos {
+  visibility: visible;
 }
 @media screen and (max-width: 1650px) {
   .projects {
@@ -497,8 +500,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(38, 49, 151, 0.8666666667);
-  color: white;
+  background-color: rgba(20, 33, 61, 0.9843137255);
+  color: #e5e5e5;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -516,13 +519,13 @@ header .contact ul li {
   margin-left: 20px;
 }
 header .contact ul li a {
-  color: white;
+  color: #e5e5e5;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
 }
 header .contact ul li a:hover {
-  color: lightgray;
+  color: #fca311;
 }
 @media screen and (max-width: 650px) {
   header .contact ul li {
@@ -621,11 +624,11 @@ header .social ul li {
   margin-right: 20px;
 }
 header .social ul li a {
-  color: white;
+  color: #e5e5e5;
   transition: all ease 0.3s;
 }
 header .social ul li a:hover {
-  color: lightgray;
+  color: #fca311;
 }
 @media screen and (max-width: 650px) {
   header .social ul li {
@@ -641,11 +644,12 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Roboto", Arial, sans-serif;
+  background-color: #e5e5e5;
 }
 
 .resume {
   display: none;
-  background-color: rgba(0, 0, 0, 0.8705882353);
+  background-color: rgba(20, 33, 61, 0.9843137255);
   border-radius: 10px;
   position: fixed;
   top: 10px;
@@ -654,12 +658,11 @@ body {
   right: 10px;
   z-index: 10;
   box-sizing: border-box;
-  color: white;
+  color: #e5e5e5;
   flex-direction: column;
   overflow: hidden;
 }
 .resume .container {
   padding: 50px 50px;
   overflow-y: auto;
-  text-align: center;
 }/*# sourceMappingURL=main.css.map */

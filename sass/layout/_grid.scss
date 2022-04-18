@@ -23,91 +23,92 @@
 
         h2 {
             visibility:hidden;
-            color:white;
+            color:$color-body;
             font-family: 'Roboto', sans-serif;
             padding:5px;
         }
         
         &.projet1 {
             background-image: url(../images/projet1.png);
-            background-size: contain;
+            background-color: $color-cartel;
+            //background-size: contain;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet1.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet1.png);
             }
         }
         
         &.projet2 {
             background-image: url(../images/projet2.png);
-            background-size: contain;
+            background-color: $color-cartel;
+            //background-size: contain;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet2.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet2.png);
             }
         }
         
         &.projet3 {
             background-image: url(../images/projet3.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet3.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet3.png);
             }
         }
         
         &.projet4 {
             background-image: url(../images/projet4.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet4.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet4.png);
             }
         }
         
         &.projet5 {
             background-image: url(../images/projet5.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet5.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet5.png);
             }
         }
         
         &.projet6 {
             background-image: url(../images/projet6.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet6.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet6.png);
             }
         }
         
         &.projet7 {
             background-image: url(../images/projet7.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet7.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet7.png);
             }
         }
         
         &.projet8 {
             background-image: url(../images/projet8.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/projet8.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet8.png);
             }
         }
                 
         &.projet9 {
             background-image: url(../images/projet9.png);
+            background-color: $color-cartel;
             
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/projet9.png);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/projet9.png);
             }
-        }
-
-        &:hover {    
-            //filter:grayscale(0.85);
-
-            h2, .technos {
-                visibility:visible;                
-            }            
         }
 
         .technos {
@@ -143,6 +144,16 @@
                 }
             }
         }
+
+        
+        &:hover {    
+            //filter:grayscale(0.85);
+
+            h2, .technos {
+                visibility:visible;                
+            }            
+        }
+
     }
 
     @media screen and (max-width: 1650px) {
